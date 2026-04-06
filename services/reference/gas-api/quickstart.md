@@ -167,6 +167,10 @@ Suggested gas fees: {
     suggestedMaxPriorityFeePerGas: "0.3", // The gas price in gwei
     suggestedMaxFeePerGas: "41.161299308", // The gas price in gwei
     minWaitTimeEstimate: 15000,
+curl --url https://mainnet.infura.io/v3/d63df39215bf4dbf8e74477f002aa5e0 \
+  -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
     maxWaitTimeEstimate: 60000
   },
   estimatedBaseFee: "24.036058416",
